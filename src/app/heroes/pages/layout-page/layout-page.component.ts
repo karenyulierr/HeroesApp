@@ -3,8 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-layout-page',
   templateUrl: './layout-page.component.html',
-  styles: ``
+  styles: ``,
 })
 export class LayoutPageComponent {
+
+  public siderbarItems = [
+    { label: 'Listado', icon: 'label', url: './list' },
+    { label: 'Añadir', icon: 'add', url: './new-hero' },
+    { label: 'Buscar', icon: 'search', url: './search' },
+  ];
 
 }
